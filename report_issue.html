@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Report Issue</title>
+</head>
+<body>
+    <h1>Report an Issue</h1>
+    <form action="/report_issue" method="POST">
+        <label for="issueType">Type of Issue:</label>
+        <input type="text" id="issueType" name="issueType" required>
+        <label for="department">Department:</label>
+        <select id="department" name="department">
+            <option value="cse">CSE</option>
+            <option value="ds">DS</option>
+            <option value="civil">Civil</option>
+            <option value="electrical">Electrical</option>
+        </select>
+        <label for="roomNo">Room No:</label>
+        <input type="text" id="roomNo" name="roomNo" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
